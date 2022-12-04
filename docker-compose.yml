@@ -4,8 +4,8 @@ blackbox-exporter:
     - "9115:9115"
       # dns: 8.8.8.8
    restart: always
-   depends_on:
-    - prometheus
+   #depends_on:
+    #- prometheus
    volumes:
-    - "./blackbox:/config"
+    - ./blackbox:/config"
    command: --config.file=/config/blackbox-exporter.yml      
