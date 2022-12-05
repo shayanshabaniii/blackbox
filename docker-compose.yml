@@ -1,4 +1,6 @@
-blackbox-exporter:
+version:"3.9"
+services:
+  blackbox-exporter:
    image: prom/blackbox-exporter:v0.22.0
    ports:
     - "9115:9115"
